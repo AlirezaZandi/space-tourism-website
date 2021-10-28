@@ -1,0 +1,95 @@
+.nav {
+  padding: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .navbar {
+    .navbar__list {
+      max-width: 850px;
+      background-color: #ffffff04;
+      backdrop-filter: blur(50px);
+      display: none;
+      @include list_style_none();
+      width: 70vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 6.5rem 3.3rem;
+      li {
+        margin: 3rem 0;
+
+        @include counter_before();
+        &::before {
+          margin-right: 1.2rem;
+          font-weight: bold;
+        }
+      }
+
+      .navbar__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 3.3rem 2.8rem;
+      }
+    }
+  }
+  @media screen and (min-width: 750px) and (max-width: 1200px) {
+    padding: 0;
+    padding-left: 4rem;
+    .navbar {
+      .navbar__toggle {
+        display: none;
+      }
+      .navbar__list {
+        display: block;
+        height: unset;
+        position: relative;
+        // background-color: red;
+        padding: 4rem 5rem;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            &::before {
+              display: none;
+            }
+          }
+        }
+        .navbar__close {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    padding-left: 4rem;
+    hr {
+      width: 100%;
+      position: relative;
+      right: -3rem;
+      z-index: 10;
+    }
+    .navbar {
+      .navbar__toggle {
+        display: none;
+      }
+      .navbar__list {
+        display: block;
+        height: unset;
+        position: relative;
+        // background-color: red;
+        padding: 4rem 12.5rem;
+        ul {
+          display: flex;
+          justify-content: space-between;
+        }
+        .navbar__close {
+          display: none;
+        }
+      }
+    }
+  }
+}

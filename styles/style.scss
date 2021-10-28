@@ -1,0 +1,16 @@
+@import "global";
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "navbar";
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: $color-body;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,130 @@
+//font family
+@for $var from 1 to 5 {
+  h#{$var} {
+    font-family: $ff-heading;
+  }
+}
+.subheding1 {
+  font-family: $ff-heading;
+}
+
+h5,
+.nav_text,
+.subheding2 {
+  font-family: $ff-subheading;
+}
+
+@for $var from 1 to 6 {
+  h#{$var} {
+    font-weight: normal;
+  }
+}
+
+//font size and color
+h1 {
+  white-space: nowrap;
+  font-size: clamp(6rem, 21vw, 9rem);
+  color: $color-white;
+
+  @media screen and (min-width: 600px) {
+    font-size: 15rem;
+  }
+}
+
+h2 {
+  white-space: nowrap;
+  font-size: clamp(4.5rem, 15vw, 6rem);
+  color: $color-white;
+
+  @media screen and (min-width: 600px) {
+    font-size: 8rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 10rem;
+  }
+}
+
+h3 {
+  white-space: nowrap;
+  font-size: clamp(2.5rem, 6.5vw, 3rem);
+  color: $color-white;
+
+  @media screen and (min-width: 600px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 5.6rem;
+  }
+}
+
+h4 {
+  white-space: nowrap;
+  font-size: clamp(1.5rem, 4.3vw, 2rem);
+  color: $color-white;
+
+  @media screen and (min-width: 600px) {
+    font-size: 2.4rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3.2rem;
+  }
+}
+
+h5 {
+  white-space: nowrap;
+  font-size: clamp(1.5rem, 4.3vw, 2rem);
+  letter-spacing: 4.75px;
+  color: $text-color-subheading;
+
+  @media screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.8rem;
+  }
+}
+
+.subheding1 {
+  white-space: nowrap;
+  font-size: clamp(1.5rem, 4.3vw, 2rem);
+  color: $color-white;
+
+  @media screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.8rem;
+  }
+}
+
+.subheding2 {
+  white-space: nowrap;
+  font-size: clamp(1rem, 3.7vw, 1.8rem);
+  color: $color-white;
+  letter-spacing: 2.35px;
+}
+
+.nav_text {
+  white-space: nowrap;
+  font-size: clamp(1.5rem, 4.3vw, 2rem);
+  color: $color-white;
+  letter-spacing: 2.7px;
+}
+
+p {
+  font-size: clamp(1rem, 4vw, 2rem);
+  color: $color-white;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
